@@ -1,0 +1,19 @@
+\subsection{DISEASES}
+\label{subsec:DISEASES}
+\href{https://goo.gl/KGQsd9}{DISEASES} integrates evidence on GDAs from (i) automatic text mining, (ii) manually curated literature, (iii) cancer mutation data, and (iv) GWAS \cite{DISEASES2015}. They further integrate all evidence data and define confidence scores that facilitate comparison of the different types and sources of evidence \cite{DISEASES2015}.
+
+They use a Named Entity Recogniser (NER) that maps diseases in Medline abstracts to the \href{http://disease-ontology.org/}{Disease Ontology} \cite{schriml2012} in two processes: (i) namely recognition and (ii) normalization (also known as identification, mapping, or grounding).
+
+DISEASES integrates the GDAs extracted from automatic text mining with evidence from databases with permissive licenses, namely manually curated associations (see Table \ref{tab:diseases_data}).
+\begin{table}[H]
+\centering
+    \begin{tabular}{c|c}
+         Source & Description  \\
+         \hline
+         \href{https://goo.gl/gnQSYt}{GHR} & Genetic variation and diseases at NIH*\\
+         \href{https://goo.gl/d2PhpC}{UniProtKB} & Curated protein functional data \cite{uniprot2017} \\
+         \href{https://goo.gl/hYjVeR}{DistiLD} & GWAS linked to ICD-10 codes \cite{palleja2011} \\
+         \href{https://goo.gl/qcY8qo}{COSMIC} & Somatic mutation cancer data \cite{cosmic2017}
+    \end{tabular}
+    \caption{Data sources used by DISEASES \cite{DISEASES2015} \label{tab:diseases_data}}
+\end{table}

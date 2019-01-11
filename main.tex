@@ -1,0 +1,72 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{\textbf{TMC1}:
+Machine Learning for drug target identification}
+\author{David Narganes-Carlon}
+\date{25th January 2019}
+\input{config.tex}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Introduction}
+\input{intro.tex}
+
+\section{Literature Review}
+\label{section:lit_review}
+
+Linking human genes to the diseases in which they are involved lies at the very heart in the drug discovery process \cite{DISEASES2015,ferrero2017,brown2018}. Such links can be made through a variety of different types of studies (e.g. Mendelian and complex diseases, GWAS, somatic mutation frequencies, transcriptomics, epigenetics and proteomics studies, detailed molecular biology studies of individual proteins, etc.) and, therefore, is important to develop an integration of those sources to comprehend the mechanisms underlying the cause of disease states and prevent or treat such conditions \cite{DISEASES2015,ferrero2017,brown2018}. The main focus of the literature review is for the student to gain an understanding of the publicly available biomedical resources. Nonetheless, (i) each individual resource has a specific scope and can only shed light on a limited set of scientific questions \cite{brown2018,DISEASES2015}, (ii) all relevant data is not collected on a single place \cite{brown2018,DisGeNET2015}, and (iii) the availability and interoperability of open and fully contextualised data sets remains a key issue in the full development and application of big data workflows to early drug discovery hypothesis generation \cite{brown2018}. However, there is a vast amount of GDAs in the biomedical literature and, therefore, the starting point of the \emph{practical} point of this PhD was to work with the biggest biomedical archive, PubMed version 2018 (see Section \ref{section:disambiguation}).
+
+Several resources were developed to provide information on GDAs by integrating multiple data sources: (i) DrugBank \cite{drugbank2008}, (ii) the Therapeutic Target Database \cite{ttd2018}, (iii) STITCH \cite{stitch42014}, (iv) PharmaGKB \cite{pharmaGSK2012}, and SuperTarget \cite{superTarget2012}.
+
+The emphasis of these databases is on the known and predicted interactions between the clinical trial drugs and their targets, how drug effects on targets are propagated through their corresponding pathways, their relationships to diseases, adverse events of drugs and pharmacogenomics \cite{brown2018}. Nevertheless, they do not provide a PTTP. There has been some attempts to develop a more systematic approach for PTTP (see Table \ref{tab:related_work}).
+
+\begin{table}[H]
+\centering
+    \begin{tabular}{c|c|c}
+      GDA Initiative & Section & Citation \\
+      \hline
+      
+      \href{https://goo.gl/ewnpWZ}{DisGeNET} & \ref{subsec:DisGeNET} & \cite{DisGeNET2015} \\
+      
+      \href{https://goo.gl/KGQsd9}{DISEASES} & \ref{subsec:DISEASES} & \cite{DISEASES2015} \\
+      
+      \href{https://goo.gl/dPWHNY}{PHAROS} &  \ref{subsec:pharos} & \cite{pharos2016} \\
+      
+      \href{https://goo.gl/eQ667p}{Open Targets} & \ref{subsec:ot} & \cite{koscielny2016} \\
+      
+      \end{tabular}
+\caption{PTTP initiatives, section in the report, and publication \label{tab:related_work}}
+\end{table}
+
+% DISGENET
+\input{lit_review/disgenet.tex}
+
+% DISEASES
+\input{lit_review/diseases.tex}
+
+% PHAROS
+\input{lit_review/pharos.tex}
+
+% Open Targets
+\input{lit_review/open_targets.tex}
+
+% Disambiguation
+\input{disambiguation.tex}
+
+% Bibliography
+\bibliographystyle{plain}
+\bibliography{refs}
+
+% % Appendix
+% \appendix
+% \section{Principal Component Analysis}
+% \input{appendix/pca.tex}
+
+% \section{Stochastic Neighbourhood Embedding}
+% \input{appendix/sne.tex}
+
+\end{document}

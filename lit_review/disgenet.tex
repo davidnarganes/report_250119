@@ -1,0 +1,72 @@
+\subsection{DisGeNET} \label{subsec:DisGeNET}
+\href{https://goo.gl/ewnpWZ}{DisGeNET} is a discovery platform designed to address questions concerning the genetic underpinning of human diseases by analysing GDAs \cite{DisGeNET2015}. DisGeNET is organised according to the type and level of curation (see Table \ref{tab:disgenet_data} and \href{https://goo.gl/ntXTjX}{DisGeNET statistics}.
+
+\begin{table}[H]
+    \centering
+    \resizebox{\textwidth}{!}{
+    \begin{tabular}{c|c|c|c|c|c}
+    Source & Type & Genes & Diseases & GDAs & Description \\
+    \hline
+    
+    \href{https://goo.gl/XtufGc}{UniProt} &
+    C & 19027 & 6303 & 20722 &
+    Curated protein functional information \cite{uniprot2017} \\
+    
+    \href{https://goo.gl/aTyMBE}{CTDh} &
+    C & 7787 & 4929 & 25975 &
+    Environmental chemicals, genes and diseases \cite{ctd2017} \\
+    
+    \href{https://goo.gl/89TfbR}{ClinVar} &
+    C & 45546 & 5639 & 54888 &
+    Genetic human variants and diseases \cite{clinvar2016} \\
+    
+    \href{https://goo.gl/KxxD8Y}{GWASC} &
+    C & 15790 & 610 & 20719 &
+    GWAS catalog \cite{gwasCatalog2017} \\
+    
+    \href{https://goo.gl/hUkKLf}{Orphanet} &
+    C & 2661 & 6702 & 97547 &
+    Rare disorders, genes, and orphan drugs \cite{orphanet2012} \\
+
+    \href{https://goo.gl/mgFWK4}{PsyGeNET} &
+    C & 1546 & 112 & 3757 &
+    Psychiatric GDAs \cite{PsyGeNET2015} \\
+
+    \href{https://goo.gl/gYHKF3}{HPO} &
+    C & 2661 & 6702 & 97547 &
+    Phenotypic vocabulary for human diseases \cite{humanPhenotypeOntology2014} \\
+    
+    \href{https://goo.gl/aTyMBE}{CTDr} &
+    M & 22 & 13 & 31 &
+    CTD for \textit{Rattus Norvergicus} \cite{ctd2017} \\
+    
+    \href{https://goo.gl/aTyMBE}{CTDm} &
+    M & 22 & 13 & 31 &
+    CTD for \textit{Mus Musculus} \cite{ctd2017} \\
+    
+    \href{https://goo.gl/zc52JW}{RGD} &
+    M & 1076 & 629 & 4291 &
+    Genomic and disease data of \textit{R Norvegicus} \cite{rgd2015} \\
+    
+    \href{https://goo.gl/iTNmRx}{MGD} &
+    M & 1464 & 1323 & 1994 &
+    Genomic and disease data of \textit{M Musculus} \cite{mgd2015} \\
+    
+    \href{https://goo.gl/y3keCN}{GAD} &
+    L & 13318 & 3099 & 63063 &
+    GWAS repository \cite{gad2004}. Retired on 09/01/2014 \\
+    
+    \href{https://goo.gl/szDDw6}{LHGDN} &
+    L & 5941 & 1799 & 31468 &
+    Semantic ML extraction of GDAs \cite{bundschus2008} \\
+    
+    \href{https://goo.gl/4Yau27}{BeFree}* &
+    L & 35392 & 16274 & 453574 &
+    Biomed Name-Entity Recogniser of GDAs \cite{bravo2015} \\
+    
+    Total &  & 100076 & 29539 & 696707 \\
+    
+    \end{tabular}}
+    \caption{Original data sources used by DisGeNET v5.0 \cite{DisGeNET2015}, type (\textbf{C} for curated data sources, \textbf{M} for Animal model data sources, and \textbf{L} for literature evidence sources), number of genes or gene variants, number of diseases or phenotypes, number of Gene--Disease Associations (GDAs or VDAs) and brief description. Information obtained from
+    \href{https://goo.gl/ntXTjX}{DisGeNET statistics} \label{tab:disgenet_data}}
+\end{table}

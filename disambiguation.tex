@@ -1,0 +1,24 @@
+\section{Disambiguation of Genes}
+\label{section:disambiguation}
+The main problem to face was that the literature is filled with alternative, idiosyncratic, and arbitrary gene names and gene symbols from different competing sources that may have other meanings \cite{gad2004,brown2018}. The aim in this section was to develop a novel \href{https://en.wikipedia.org/wiki/Named-entity_recognition}{Name Entity Recogniser} (NER) that uses connected components of papers that are recurrently cocited coupled with machine learning classifiers to locate human gene names in articles from MEDLINE 2018 and 2019. The work done in this section will be continued to (i) allow integration with other relevant databases (see Section \ref{section:lit_review}) and to (ii) develop in the future a novel co-occurrence gene-disease ranking coupled with semantic analysis to account for the positivity or negativity of the GDAs.
+
+\subsection{Workflow}
+The workflow of the NER is detailed in Figure \ref{fig:NER_workflow}.
+\begin{figure}
+    \centering
+    \includegraphics{}
+    \caption{Caption}
+    \label{fig:NER_workflow}
+\end{figure}
+
+ - gene or disease may have other meanings
+ - contextual information from nearby words
+ - comprehensive dictionary of genes is a prerequisite for text mining
+ - gene associations extracted from Medline abstracts
+ - disguise human from orthologs based on synonyms
+ 
+PROBLEMS:
+- papers in cluster cocited not talking about gene
+- all clusters with safe synonyms -> No training data, all positive class
+- No safe synonyms -> all negative class
+- 
